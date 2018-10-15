@@ -20,6 +20,8 @@ services:
       - ./web_data:/var/lib/odoo
     depends_on:
       - odoodb
+    stdin_open: true
+    tty: true
     environment:
       - HOST=odoodb
     networks:
